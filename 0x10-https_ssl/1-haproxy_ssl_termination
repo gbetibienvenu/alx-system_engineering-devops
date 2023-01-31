@@ -7,7 +7,6 @@ global
         user haproxy
         group haproxy
         daemon
-
         # Default SSL material locations
         ca-base /etc/ssl/certs
         crt-base /etc/ssl/private
@@ -40,5 +39,5 @@ frontend myfrontend
 
 backend myservers
         balance roundrobin
-        server 71796-web-01 100.24.206.107:80 check
-        server 71796-web-02 100.25.131.225:80 check
+        server 71770-web-01 100.24.206.107:80 check
+        server 71770-web-02 100.25.131.225:80 check 
